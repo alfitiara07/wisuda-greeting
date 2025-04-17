@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wisuda Greeting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+      <h1>Welcome to Graduation Greeting!</h1>
+      <button class="btn" onclick="nextSlide()">Lanjut</button>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+      <h2>Masukkan nama kamu dulu ya!</h2>
+      <input type="text" id="namaInput" placeholder="Nama kamu">
+      <button class="btn" onclick="nextSlide()">Lanjut</button>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+      <h2>Lanjut ga nih?</h2>
+      <button class="btn" onclick="nextSlide()">Lanjut lah</button>
+      <button class="btn" onclick="nextSlide()">Sama lanjut dong</button>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide4">
+      <h2>Oke mari kita lanjut</h2>
+      <button class="btn" onclick="nextSlide()">Siap!</button>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide5">
+      <h2>Hitung Mundur</h2>
+      <h1 id="count">3</h1>
+    </div>
+
+    <!-- Slide 6 - Ucapan -->
+    <div class="slide" id="slide6">
+      <div id="ucapan"></div>
+    </div>
+
+    <!-- Slide 7 - Pertanyaan suka -->
+    <div class="slide" id="slide7">
+      <h2>Hehe, gimana? Kamu suka ngga sama ucapannya?</h2>
+      <button class="btn" onclick="nextSlide()">Suka</button>
+      <button class="btn" onclick="nextSlide()">Suka banget dong</button>
+    </div>
+
+    <!-- Slide 8 - Respon suka -->
+    <div class="slide" id="slide8">
+      <div id="teks8"></div>
+    </div>
+
+    <!-- Slide 9 - Penutup -->
+    <div class="slide" id="slide9">
+      <div id="teks9a"></div>
+      <div id="teks9b"></div>
+      <div id="teks9c"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
